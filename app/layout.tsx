@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Waitlo - Launch Your Waitlist in Minutes for Free",
   description:
-    "The easiest way to collect interest in your product. No backend, no mailers. Just plug in your unique API key and you're live.",
+    "Launch Your Waitlist in Minutes for Free. The easiest way to collect interest in your product. No backend, no mailers. Just plug in your unique API key and you're live.",
   keywords: [
     "free waitlist api",
     "waitlist tool",
