@@ -20,62 +20,73 @@ import {
 } from "@/components/ui/accordion";
 import { useState } from "react";
 
+const WAITLO_APP_URL = "https://waitlo.app";
+
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <main className="min-h-screen flex flex-col bg-black text-white">
-      <header className="container mx-auto py-6 px-4 flex items-center justify-between sticky top-0 z-50 bg-black/80 backdrop-blur-sm">
-        <Link href="/" className="flex items-center space-x-2">
-          <Zap className="h-6 w-6" />
-          <span className="text-xl font-heading font-bold">Waitlo</span>
-        </Link>
-        <nav className="hidden md:flex items-center space-x-8">
-          <a
-            href="#features"
-            className="text-sm hover:text-gray-300 transition-colors"
+    <main className="min-h-screen flex flex-col bg-black text-white relative overflow-x-hidden">
+      <header className="w-full py-6 px-4 flex items-center justify-between sticky top-0 z-50 bg-black/80 backdrop-blur-sm">
+        <div className="container mx-auto flex items-center justify-between">
+          <Link href="/" className="flex items-center space-x-2">
+            <Zap className="h-6 w-6" />
+            <span className="text-xl font-heading font-bold">Waitlo</span>
+          </Link>
+          <nav className="hidden md:flex items-center space-x-8">
+            <a
+              href="#features"
+              className="text-sm hover:text-gray-300 transition-colors"
+            >
+              Features
+            </a>
+            <a
+              href="#how-it-works"
+              className="text-sm hover:text-gray-300 transition-colors"
+            >
+              How it works
+            </a>
+            <a
+              href="#faq"
+              className="text-sm hover:text-gray-300 transition-colors"
+            >
+              FAQ
+            </a>
+            <Button variant="outline" className="rounded-full" asChild>
+              <a
+                href={WAITLO_APP_URL}
+                id="get-started"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sign In →
+              </a>
+            </Button>
+          </nav>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(true)}
           >
-            Features
-          </a>
-          <a
-            href="#how-it-works"
-            className="text-sm hover:text-gray-300 transition-colors"
-          >
-            How it works
-          </a>
-          <a
-            href="#faq"
-            className="text-sm hover:text-gray-300 transition-colors"
-          >
-            FAQ
-          </a>
-          <Button variant="outline" className="rounded-full" asChild>
-            <Link href="#get-started">Sign In →</Link>
+            <span className="sr-only">Open menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
           </Button>
-        </nav>
-        <Button
-          variant="ghost"
-          size="icon"
-          className="md:hidden"
-          onClick={() => setMobileMenuOpen(true)}
-        >
-          <span className="sr-only">Open menu</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <line x1="3" y1="6" x2="21" y2="6" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <line x1="3" y1="18" x2="21" y2="18" />
-          </svg>
-        </Button>
+        </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
@@ -132,11 +143,32 @@ export default function Home() {
         )}
       </header>
 
-      {/* Hero Section with Radial Glow */}
+      {/* Hero Section with Gradient Circles */}
       <section className="relative flex flex-col items-center justify-center text-center px-4 py-24 md:py-36 lg:py-48">
-        {/* Radial Gradient Background - Extended and faded */}
-        <div className="absolute inset-0 pointer-events-none overflow-visible">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-blue-500/15 rounded-full blur-[120px] opacity-60"></div>
+        {/* Hero Background Gradients - only in hero section */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ transform: "translateZ(0)" }}
+        >
+          {/* Left side gradient circle - blue */}
+          <div
+            className="absolute top-[10%] -left-[20%] md:-left-[10%] w-[800px] h-[800px] md:w-[1200px] md:h-[1200px]"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(37,99,235,0.3) 0%, rgba(37,99,235,0.15) 30%, rgba(37,99,235,0) 70%)",
+              transform: "translateZ(0)",
+            }}
+          ></div>
+
+          {/* Right side gradient circle - cyan with extended fade for natural transition */}
+          <div
+            className="absolute bottom-[5%] -right-[20%] md:-right-[10%] w-[800px] h-[800px] md:w-[1100px] md:h-[1100px]"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(6,182,212,0.25) 0%, rgba(6,182,212,0.1) 40%, rgba(6,182,212,0.05) 60%, rgba(6,182,212,0) 80%)",
+              transform: "translateZ(0)",
+            }}
+          ></div>
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto">
@@ -155,7 +187,12 @@ export default function Home() {
               className="px-8 py-3 h-auto rounded-full bg-white text-black hover:bg-gray-200 text-lg"
               asChild
             >
-              <a href="#get-started" id="get-started">
+              <a
+                href={WAITLO_APP_URL}
+                id="get-started"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Get Started Free →
               </a>
             </Button>
@@ -376,7 +413,9 @@ export default function Home() {
                   Can I customize the form?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-400">
-                  Yes, use our component or connect your own.
+                  Yes, use our component or connect whatever form you want. You
+                  just need to make sure the form is submitted to our endpoint
+                  with the API key shared in your Waitlo dashboard.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -421,7 +460,14 @@ export default function Home() {
             className="px-8 py-3 h-auto rounded-full bg-white text-black hover:bg-gray-200 text-lg"
             asChild
           >
-            <a href="#get-started">Get Started Now →</a>
+            <a
+              href={WAITLO_APP_URL}
+              id="get-started"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Started Now →
+            </a>
           </Button>
         </div>
       </section>
