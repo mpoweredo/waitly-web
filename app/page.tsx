@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/accordion";
 import { useState } from "react";
 
-const WAITLO_APP_URL = "https://waitlo.app";
+const WAITLO_APP_URL = "https://app.waitlo.com";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
