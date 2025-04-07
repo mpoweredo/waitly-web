@@ -15,10 +15,29 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Waitly - Launch Your Waitlist in Minutes",
+  title: "Waitlo - Launch Your Waitlist in Minutes for Free",
   description:
     "The easiest way to collect interest in your product. No backend, no mailers. Just plug in your unique API key and you're live.",
-  generator: "v0.dev",
+  keywords: [
+    "free waitlist api",
+    "waitlist tool",
+    "waitlist builder",
+    "launch waitlist",
+    "no code waitlist",
+    "saas waitlist",
+    "api waitlist",
+    "waitlist signup form",
+    "collect signups",
+    "prelaunch waitlist",
+    "early access form",
+    "waitlist for startup",
+    "free waitlist tool",
+    "waitlist form generator",
+    "frontend waitlist integration",
+    "indie hacker tools",
+    "developer waitlist tool",
+    "startup launch tools",
+  ],
 };
 
 export default function RootLayout({

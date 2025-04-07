@@ -7,7 +7,7 @@ export default function PrivacyPage() {
       <header className="container mx-auto py-6 px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Zap className="h-6 w-6" />
-          <span className="text-xl font-heading font-bold">Waitly</span>
+          <span className="text-xl font-heading font-bold">Waitlo</span>
         </Link>
       </header>
 
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-2xl font-bold mt-8 mb-4">1. Introduction</h2>
           <p>
-            At Waitly ("we," "our," or "us"), we respect your privacy and are
+            At Waitlo ("we," "our," or "us"), we respect your privacy and are
             committed to protecting the personal information you provide to us.
             This Privacy Policy explains how we collect, use, disclose, and
             safeguard your information when you use our waitlist management

@@ -28,7 +28,7 @@ export default function Home() {
       <header className="container mx-auto py-6 px-4 flex items-center justify-between sticky top-0 z-50 bg-black/80 backdrop-blur-sm">
         <Link href="/" className="flex items-center space-x-2">
           <Zap className="h-6 w-6" />
-          <span className="text-xl font-heading font-bold">Waitly</span>
+          <span className="text-xl font-heading font-bold">Waitlo</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
           <a
@@ -83,7 +83,7 @@ export default function Home() {
             <div className="container mx-auto px-4 py-6 flex justify-between items-center border-b border-zinc-800">
               <Link href="/" className="flex items-center space-x-2">
                 <Zap className="h-6 w-6" />
-                <span className="text-xl font-heading font-bold">Waitly</span>
+                <span className="text-xl font-heading font-bold">Waitlo</span>
               </Link>
               <Button
                 variant="ghost"
@@ -199,7 +199,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-bold mb-2">Completely Free</h3>
             <p className="text-gray-400">
-              No pricing tiers, no catch. Waitly is 100% free.
+              No pricing tiers, no catch. Waitlo is 100% free.
             </p>
           </div>
         </div>
@@ -219,7 +219,7 @@ export default function Home() {
               <div className="text-sm text-gray-400 mb-2">Step 1</div>
               <h3 className="text-2xl font-bold mb-4">Create an Account</h3>
               <p className="text-gray-400">
-                Log in to the Waitly app and create a project.
+                Log in to the Waitlo app and create a project.
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
@@ -283,7 +283,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-3">Dashboard Included</h3>
               <p className="text-gray-400">
-                View signups right inside your Waitly project.
+                View signups right inside your Waitlo project.
               </p>
             </div>
           </div>
@@ -297,7 +297,7 @@ export default function Home() {
             No pricing. Seriously. It&apos;s free.
           </h2>
           <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
-            We built Waitly for founders like you. No hidden fees. No billing
+            We built Waitlo for founders like you. No hidden fees. No billing
             settings. Just launch.
           </p>
           <div className="flex justify-center">
@@ -353,7 +353,7 @@ export default function Home() {
                   Do I need a backend to use this?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-400">
-                  Nope. Just your API key which is available in your Waitly
+                  Nope. Just your API key which is available in your Waitlo
                   dashboard.
                 </AccordionContent>
               </AccordionItem>
@@ -387,7 +387,7 @@ export default function Home() {
                   How do I contact the people who sign up?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-400">
-                  All your waitlist data is available in your Waitly dashboard.
+                  All your waitlist data is available in your Waitlo dashboard.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -433,13 +433,13 @@ export default function Home() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Zap className="h-6 w-6" />
-                <span className="text-xl font-heading font-bold">Waitly</span>
+                <span className="text-xl font-heading font-bold">Waitlo</span>
               </div>
               <p className="text-gray-400 mb-4">
                 The easiest way to collect interest in your product.
               </p>
               <p className="text-gray-500">
-                © 2025 Waitly. Built for builders.
+                © {new Date().getFullYear()} Waitlo. Built for builders.
               </p>
             </div>
 

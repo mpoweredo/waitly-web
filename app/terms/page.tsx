@@ -7,7 +7,7 @@ export default function TermsPage() {
       <header className="container mx-auto py-6 px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Zap className="h-6 w-6" />
-          <span className="text-xl font-heading font-bold">Waitly</span>
+          <span className="text-xl font-heading font-bold">Waitlo</span>
         </Link>
       </header>
 
@@ -18,7 +18,7 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold mt-8 mb-4">1. Introduction</h2>
           <p>
-            Welcome to Waitly ("we," "our," or "us"). By accessing or using our
+            Welcome to Waitlo ("we," "our," or "us"). By accessing or using our
             waitlist management service (the "Service"), you agree to be bound
             by these Terms of Service ("Terms"). If you do not agree to these
             Terms, please do not use the Service.
@@ -28,7 +28,7 @@ export default function TermsPage() {
             2. Description of Service
           </h2>
           <p>
-            Waitly provides a platform for collecting and managing waitlist
+            Waitlo provides a platform for collecting and managing waitlist
             signups for your products or services. Our Service allows you to
             create, manage, and analyze waitlists through our API and embeddable
             components.
@@ -54,7 +54,7 @@ export default function TermsPage() {
           </h2>
           <p>
             As part of the Service, you will receive API keys that allow you to
-            integrate Waitly with your applications. You are responsible for
+            integrate Waitlo with your applications. You are responsible for
             keeping your API keys secure and should not share them with
             unauthorized parties.
           </p>
@@ -113,7 +113,7 @@ export default function TermsPage() {
           </h2>
           <p>
             The Service, including all content, features, and functionality, is
-            owned by Waitly and is protected by copyright, trademark, and other
+            owned by Waitlo and is protected by copyright, trademark, and other
             intellectual property laws.
           </p>
           <p>
@@ -152,7 +152,7 @@ export default function TermsPage() {
             10. Limitation of Liability
           </h2>
           <p>
-            IN NO EVENT SHALL WAITLY BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+            IN NO EVENT SHALL WAITLO BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
             SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT
             LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER
             INTANGIBLE LOSSES, RESULTING FROM YOUR ACCESS TO OR USE OF OR
